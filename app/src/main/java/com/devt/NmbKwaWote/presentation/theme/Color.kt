@@ -1,4 +1,4 @@
-package com.devt.NmbKwaWote.ui.theme
+package com.devt.NmbKwaWote.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 
