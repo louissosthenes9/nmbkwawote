@@ -7,6 +7,7 @@ import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -37,8 +38,10 @@ fun CustomTopAppBar(
             }
         },
         colors = TopAppBarDefaults.topAppBarColors(
-            containerColor = MaterialTheme.colorScheme.surface,
-            titleContentColor = MaterialTheme.colorScheme.onSurface
+            containerColor =  Color(0xFF1123E4), // Background color
+            titleContentColor = Color.White, // Text and icon color in the title
+            navigationIconContentColor = Color.White, // Color of the navigation icon (if any)
+            actionIconContentColor = Color.White
         )
     )
 }

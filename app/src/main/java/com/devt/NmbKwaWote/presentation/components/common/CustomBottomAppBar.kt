@@ -48,6 +48,7 @@ fun CustomBottomAppBar(
         }
     )
 }
+
 @Composable
 fun BottomNavigationItem(
     item: NavItem,
