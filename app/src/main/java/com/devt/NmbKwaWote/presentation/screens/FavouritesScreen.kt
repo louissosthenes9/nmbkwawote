@@ -5,6 +5,6 @@ import androidx.compose.runtime.Composable
 
 @Composable
 
-fun TransactionsScreen(){
-    Text("This is the transaction screen")
+fun FavouritesScreen(){
+    Text("this is favourites screen")
 }

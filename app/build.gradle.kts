@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.devt.NmbKwaWote"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.devt.NmbKwaWote"
@@ -40,7 +40,10 @@ android {
 }
 
 dependencies {
-
+    val nav_version = "2.8.6"
+    implementation("androidx.compose.material:material-icons-core") // For core icons
+    implementation("androidx.compose.material:material-icons-extended")
+    implementation ("androidx.navigation:navigation-compose:$nav_version")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
