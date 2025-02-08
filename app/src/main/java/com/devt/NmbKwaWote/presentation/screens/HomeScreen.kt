@@ -155,7 +155,7 @@ fun HomeScreen(onSettingsClick: () -> Unit) {
                     onClick = { /* handle scan to pay */ }
                 )
                 ActionButton(
-                    label = "Zaid",
+                    label = "Zaidi",
                     icon = Icons.Filled.MoreHoriz,
                     onClick = { /* handle salary advance */ }
                 )

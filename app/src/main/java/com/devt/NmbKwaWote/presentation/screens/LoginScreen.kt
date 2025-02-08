@@ -5,5 +5,5 @@ import androidx.compose.runtime.Composable
 
 @Composable
 fun LoginScreen(){
-    Text("This is the login screen")
+
 }
