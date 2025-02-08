@@ -1,11 +1,8 @@
 @file:Suppress("DEPRECATION")
 
 package com.devt.NmbKwaWote.presentation.screens
-
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.clickable
-import androidx.compose.material3.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.MoreHoriz
 import androidx.compose.material.icons.outlined.AccountBalanceWallet
@@ -16,6 +13,7 @@ import androidx.compose.material.icons.outlined.Savings
 import androidx.compose.material.icons.outlined.Send
 import androidx.compose.material.icons.outlined.ShoppingBag
 import androidx.compose.material.icons.outlined.Wallet
+import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -79,7 +77,7 @@ fun ActionButton(
 }
 
 @Composable
-fun HomeScreen(onSettingsClick: () -> Unit) {
+fun HomeScreen() {
     Scaffold(
         modifier = Modifier.fillMaxSize()
     ) { innerPadding ->
