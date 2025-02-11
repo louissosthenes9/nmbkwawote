@@ -315,17 +315,19 @@ fun HomeContent(navController: NavHostController) {
                 ActionButton(
                     label = "Send Money",
                     icon = Icons.Outlined.Send,
-                    onClick = { /* handle send money */ }
+                    onClick = { navController.navigate("send_money") }
                 )
                 ActionButton(
                     label = "Pay Bills",
                     icon = Icons.Outlined.ReceiptLong,
-                    onClick = { /* handle pay bills */ }
+                    onClick = { navController.navigate("pay_bills") }
                 )
                 ActionButton(
                     label = "Withdraw Money",
                     icon = Icons.Outlined.AccountBalanceWallet,
-                    onClick = { /* handle withdraw money */ }
+                    onClick = {
+                             navController.navigate("withdraw_money")
+                    }
                 )
             }
             // Second row with 3 buttons

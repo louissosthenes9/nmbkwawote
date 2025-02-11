@@ -10,6 +10,9 @@ import com.devt.NmbKwaWote.presentation.screens.FavouritesScreen
 import com.devt.NmbKwaWote.presentation.screens.LoginScreen
 import com.devt.NmbKwaWote.presentation.screens.SettingScreen
 import com.devt.NmbKwaWote.presentation.screens.TransactionsScreen
+import com.devt.NmbKwaWote.presentation.screens.features.PayBillScreen
+import com.devt.NmbKwaWote.presentation.screens.features.SendMoneyScreen
+import com.devt.NmbKwaWote.presentation.screens.features.WithdrawMoneyScreen
 
 @Composable
 fun NavGraph(
@@ -42,6 +45,18 @@ fun NavGraph(
 
         composable(Screen.Favourites.route) {
             FavouritesScreen(navController = navController)
+        }
+
+        composable(Screen.SendMoney.route){
+            SendMoneyScreen(navController = navController)
+        }
+
+        composable(Screen.PayBills.route){
+            PayBillScreen(navController = navController)
+        }
+
+        composable(Screen.WithdrawMoney.route){
+            WithdrawMoneyScreen(navController = navController)
         }
     }
 }
