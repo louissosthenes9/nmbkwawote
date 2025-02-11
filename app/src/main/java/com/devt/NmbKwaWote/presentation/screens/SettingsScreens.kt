@@ -22,7 +22,7 @@ fun SettingScreen(navController: NavHostController) {
                 .fillMaxSize()
                 .padding(16.dp)
         ) {
-            Text("setting page")
+            Text("All the User preferences...coming soon")
         }
     }
 }

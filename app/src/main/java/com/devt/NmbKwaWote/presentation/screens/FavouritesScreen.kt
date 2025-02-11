@@ -21,7 +21,7 @@ fun FavouritesScreen(navController: NavHostController) {
                 .fillMaxSize()
                 .padding(16.dp)
         ) {
-            Text("Favourite screen")
+            Text("Wapendwa wako ")
         }
     }
 }

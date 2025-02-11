@@ -48,6 +48,9 @@ import com.devt.NmbKwaWote.presentation.navigation.Screen
 import com.devt.NmbKwaWote.presentation.screens.FavouritesScreen
 import com.devt.NmbKwaWote.presentation.screens.SettingScreen
 import com.devt.NmbKwaWote.presentation.screens.TransactionsScreen
+import com.devt.NmbKwaWote.presentation.screens.features.PayBillScreen
+import com.devt.NmbKwaWote.presentation.screens.features.SendMoneyScreen
+import com.devt.NmbKwaWote.presentation.screens.features.WithdrawMoneyScreen
 import com.devt.NmbKwaWote.presentation.theme.NmbKwaWoteTheme
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.*
@@ -197,6 +200,15 @@ fun AppContent(mainViewModel: MainViewModel = androidx.lifecycle.viewmodel.compo
         composable(Screen.Transactions.route) { TransactionsScreen(navController) }
         composable(Screen.Card.route) { CardScreen(navController) }
         composable(Screen.Favourites.route) { FavouritesScreen(navController) }
+        composable("send_money") {  // Add this route
+            SendMoneyScreen(navController) // You'll need to create this composable
+        }
+        composable("pay_bills") {
+            PayBillScreen(navController) // Create this composable
+        }
+        composable("withdraw_money") {
+            WithdrawMoneyScreen(navController) // Create this composable
+        }
     }
 }
 
@@ -239,7 +251,7 @@ fun AuthScreen(onAuthSuccess: () -> Unit) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Button(onClick = { biometricPrompt.authenticate(promptInfo) }) {
-            Text("Authenticate with Biometrics")
+            Text("fingerprint")
         }
         if (BuildConfig.DEBUG) {
             Spacer(modifier = Modifier.height(16.dp))
@@ -271,7 +283,7 @@ fun HomeContent(navController: NavHostController) {
     Scaffold(
         topBar = {
             CustomTopAppBar(
-                userName = "louis kookaburra",
+                userName = "Karibu, Username",
                 onSettingsClick = { navController.navigate(Screen.Settings.route) }
             )
         },
@@ -304,7 +316,7 @@ fun HomeContent(navController: NavHostController) {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(
-                text = "Chagua Huduma",
+                text = "Karibu NMB, Chagua Huduma",
                 style = MaterialTheme.typography.headlineSmall
             )
             // First row with 3 buttons

@@ -22,7 +22,7 @@ fun TransactionsScreen(navController: NavHostController) {
                 .fillMaxSize()
                 .padding(16.dp)
         ) {
-            Text("Transaction screen")
+            Text("No transaction yet")
         }
     }
 }

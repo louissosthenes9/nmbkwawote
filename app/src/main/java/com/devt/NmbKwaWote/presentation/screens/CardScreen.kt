@@ -19,7 +19,7 @@ fun CardScreen(navController: NavHostController) {
                 .fillMaxSize()
                 .padding(16.dp)
         ) {
-            Text("card screen")
+            Text("all the NMB card information goes here")
         }
     }
 }
